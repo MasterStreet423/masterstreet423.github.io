@@ -1,6 +1,17 @@
 body{
     margin: 0;
+    background-color: #E4E6C3;
 }
 header{
-    background-color: green;
+    background-color: #222725;
+    color: #F7F7F2;
+    padding: 3rem 3rem;
+    font-size: 30px;
+    text-align: center;
+}
+
+h2{
+    padding: 3rem 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
 }
