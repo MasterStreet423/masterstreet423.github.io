@@ -3,16 +3,16 @@ body{
     background-color: #E4E6C3;
 }
 header{
+    width: 100%;
     background-color: #222725;
     color: #F7F7F2;
     padding: 3rem 0rem;
-    font-size: 60px;
+    font-size: 7vh;
     text-align: center;
 }
 
 h2{
     padding: 8rem 0;
-    height: 80%;
     font-family: 'Montserrat', sans-serif;
     font-size: 60px;
     text-align: center;
@@ -37,10 +37,16 @@ article{
     font-size: 20px;
     font-family: 'Dosis', sans-serif;
     background-color: #2227250e;
+    border: 2px solid #676868a2;
     border-radius: 10%;
 }
 
+article:hover{
+    box-shadow: 0 0 3px 2px#676868a2;
+    transition: box-shadow .5s;
+}
+
 h2:hover{
-    text-shadow: 4px 4px 3px rgb(0, 0, 0);
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
     transition: text-shadow .5s;
 }
