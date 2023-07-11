@@ -61,7 +61,7 @@ nav ul {
   
   nav li a {
     display: inline-block;
-    padding: 5vh 10vw;
+    padding: 3vh 10vw;
     transition: .1s background-color;
     background-color: #242424;
     color: #ffffff;
