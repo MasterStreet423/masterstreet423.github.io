@@ -12,20 +12,26 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./Style.css">
 </head>
-
 <body>
     <header>
         <h1>MasterStreet</h1>
         <p>Erwin Jacimino</p>
+        <nav>
+            <ul>
+              <li><a href="#quiensoy">QUIEN SOY</a></li>
+              <li><a href="#proyects">PROYECTOS</a></li>
+              <li><a href="#estudios">ESTUDIOS</a></li>
+            </ul>
+          </nav>
     </header>
-    <section id="quiensoy">
+    <main>
+        <article id="quiensoy">
         <h2>QUIEN SOY</h2>
-        <article>
-            <p id="textqs">soy un desarrollador principiante que a comenzado a estudiar y quiere desarrollarse
+            <p class="textos">soy un desarrollador principiante que a comenzado a estudiar y quiere desarrollarse
                 profesionalmente
                 como ingeniero civil informático, estoy estudiando en la universidad autónoma de chile, con una gran
                 pasión por la codificación y los videojuegos como sera mencionado abajo, tengo proyectos en desarrollo
-                de videojuegos y planeo seguirlo continuando, por ahora voy en mi primer semestre de carrera
+                de videojuegos y planeo seguirlo continuando, por ahora voy en mi segundo semestre de carrera
             </p>
         </article>
     </section>
@@ -35,14 +41,14 @@
             <h3 class="nameproyect">VIDEOJUEGOS</h3>
             <ol>
                 <li>
-                    <a href="https://masterstreet423.github.io/Bci-revenge">Bci Revenge</a>
+                    <a href="https://masterstreet423.github.io/Bci-revenge" target="_blank">Bci Revenge</a>
                     <p>Un pequeño juego que hice como proyecto para la universidad, era montar una pagina web
                         pero se me fue la olla y termine haciendo un videojuego sencillo con una mecanica
                         basada en la programacion en python
                     </p>
                 </li>
                 <li>
-                    <a href="https://masterstreet423.github.io/ScaryGame">ScaryGame</a>
+                    <a href="https://masterstreet423.github.io/ScaryGame" target="_blank">ScaryGame</a>
                     <p>Un juego que simula terror en el que hablas con un demonio muy mal hablado, que responde
                         preguntas afirmativas o negativas
                         y tiene algunos comandos para cuando menos te lo esperes responder de mala forma
@@ -54,7 +60,7 @@
             <h3 class="nameproyect">PROYECTOS SERIOS</h3>
             <ol>
                 <li>
-                    <a href="https://masterstreet423.github.io/Bci-revenge">Librería de Conexión con ChatGpt</a>
+                    <a href="https://github.com/MasterStreet423/ChatGpt_Conection_Python" target="_blank">Librería de Conexión con ChatGpt</a>
                     <p>Una librería python la cual permite una conectarse con el ChatGpt oficial, y enviar y recibir
                         respuestas de forma incluso mas
                         rápida que el ChatGpt oficial ya que no carga la interfaz visual ni tampoco los archivos css, ya
@@ -63,9 +69,7 @@
                         agiliza considerablemente la carga, también bloquea la petición https de moderación que contiene
                         la pagina oficial, lo que evita un riesgo de ban, dando
                         aun mas beneficios, ofrece la flexibilidad suficiente para permitir utilizarlo de infinidad de
-                        maneras, la mayor desventaja, es la necesidad
-                        de extracción de cookies de forma manual del navegador común, eso para evitar el inicio de
-                        sesión repetidamente
+                        maneras.
                     </p>
                 </li>
             </ol>
@@ -88,7 +92,12 @@
             </p>
         </article>
     </section>
-
+    <script>document.getElementsByTagName("a").addEventListener("click", function(event) {
+        event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+        
+        var ejemplo = document.getElementById("ejemplo");
+        ejemplo.scrollIntoView({ behavior: "smooth", block: "center" });
+      });</script>
 </body>
 
 </html>
