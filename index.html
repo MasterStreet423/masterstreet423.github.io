@@ -12,92 +12,93 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./Style.css">
 </head>
+
 <body>
-    <header>
+
+    <header class="port-header">
         <h1>MasterStreet</h1>
-        <p>Erwin Jacimino</p>
-        <nav>
-            <ul>
-              <li><a href="#quiensoy">QUIEN SOY</a></li>
-              <li><a href="#proyects">PROYECTOS</a></li>
-              <li><a href="#estudios">ESTUDIOS</a></li>
-            </ul>
-          </nav>
+        <p id="name">Erwin Jacimino</p>
     </header>
+
+    <nav class="port-nav">
+        <ul >
+            <li><a href="#quiensoy">QUIEN SOY</a></li>
+            <li><a href="#proyects">PROYECTOS</a></li>
+            <li><a href="#estudios">ESTUDIOS</a></li>
+        </ul>
+    </nav>
     <main>
-        <article id="quiensoy">
-        <h2>QUIEN SOY</h2>
-            <p class="textos">Soy un desarrollador principiante que ha comenzado a estudiar y quiere desarrollarse
+        <article id="quiensoy" class="port-art">
+            <h2 class="port-title-art main">Quien Soy</h2>
+            <p class="port-text-art">Soy un desarrollador principiante que ha comenzado a estudiar y quiere
+                desarrollarse
                 profesionalmente
                 como Ingeniero Civil Informático, estoy estudiando en la Universidad Autónoma de Chile, con una gran
                 pasión por la codificación y los videojuegos como será mencionado abajo, tengo proyectos en desarrollo
                 de videojuegos y planeo seguirlo continuando, por ahora voy en mi segundo semestre de carrera
             </p>
         </article>
-    </section>
-    <section id="proyects">
-        <h2>PROYECTOS SUBIDOS</h2>
-        <article>
-            <h3 class="nameproyect">VIDEOJUEGOS</h3>
-            <ol>
-                <li>
-                    <a href="https://masterstreet423.github.io/Bci-revenge" target="_blank">Bci Revenge</a>
-                    <p>Un pequeño juego que hice como proyecto para la universidad, era montar una página web
-                        pero se me fue la olla y termine haciendo un videojuego sencillo con una mecánica
-                        basada en la programación en python
-                    </p>
+
+        <h2 class="port-title-art main">Proyectos Subidos</h2>
+
+        <article id="proyects" class="port-art">
+            <h3 class="port-title-art"">Videojuegos</h3>
+                <ol>
+                    <li class="port-proyect">
+                <a href=" https://masterstreet423.github.io/Bci-revenge" target="_blank" class="port-proyect-title">Bci
+                    Revenge</a>
+                <p class="port-text-art">Un pequeño juego que hice como proyecto para la universidad, era montar una
+                    página web
+                    pero se me fue la olla y termine haciendo un videojuego sencillo con una mecánica
+                    basada en la programación en python
+                </p>
                 </li>
-                <li>
-                    <a href="https://masterstreet423.github.io/ScaryGame" target="_blank">ScaryGame</a>
-                    <p>Un juego que simula terror en el que hablas con un demonio muy mal hablado, que responde
+                <li class="port-proyect">
+                    <a href="https://masterstreet423.github.io/ScaryGame" target="_blank" class="port-proyect-title">Scary Game</a>
+                    <p class="port-text-art">Un juego que simula terror en el que hablas con un demonio muy mal hablado, que responde
                         preguntas afirmativas o negativas
                         y tiene algunos comandos para cuando menos te lo esperes responder de mala forma
                     </p>
                 </li>
-            </ol>
+                </ol>
         </article>
-        <article>
-            <h3 class="nameproyect">PROYECTOS SERIOS</h3>
+        <article class="port-art">
+            <h3 class="port-title-art">Otros Proyectos</h3>
             <ol>
-                <li>
-                    <a href="https://github.com/MasterStreet423/ChatGpt_Conection_Python" target="_blank">Librería de Conexión con ChatGpt</a>
-                    <p>Una librería python la cual permite una conexión con el ChatGpt oficial, y enviar y recibir
+                <li class="port-proyect">
+                    <a href="https://github.com/MasterStreet423/ChatGpt_Conection_Python" target="_blank" class="port-proyect-title">Librería
+                        de Conexión con ChatGpt</a>
+                    <p class="port-text-art">Una librería python la cual permite una conexión con el ChatGpt oficial, y enviar y recibir
                         respuestas de forma incluso mas
-                        rápida que el ChatGpt oficial ya que no carga la interfaz visual ni tampoco los archivos css, ya
+                        rápida que el ChatGpt oficial ya que no carga la interfaz visual ni tampoco los archivos
+                        css, ya
                         que las peticiones de estos mismos están
                         bloqueadas del código, y contiene una memoria caché lo que aumenta el tamaño del uso pero
-                        agiliza considerablemente la carga, también bloquea la petición https de moderación que contiene
+                        agiliza considerablemente la carga, también bloquea la petición https de moderación que
+                        contiene
                         la página oficial, lo que evita un riesgo de ban, dando
-                        aún mas beneficios, ofrece la flexibilidad suficiente para permitir utilizarlo de infinidad de
+                        aún mas beneficios, ofrece la flexibilidad suficiente para permitir utilizarlo de infinidad
+                        de
                         maneras.
                     </p>
                 </li>
             </ol>
         </article>
-    </section>
 
-    <section id="estudios">
-        <h2>Estudios hasta la actualidad</h2>
-        <article>
-            <p>
-                Mi educación básica fue en el colegio William Wilson Chol-Chol, estudié ahi desde pre-kinder hasta 8vo,
-                terminando esa etapa comencé a estudiar en el ahora llamado "Liceo Comercial Temuco Bicentenario de
-                Excelencia", mis estudios
-                ahi fueron desde 2017 Hasta el 2022, teniendo que repetir un año por motivos de la pandemia del 2022
-                pero finalizando con un título técnico
-                en administración de empresas mención logística, el verano del 2023 comencé mi practica técnico
-                profesional en
-                EASY S.A, actualmente me encuentro estudiando Ingeniería Civil Informática en la Universidad Autónoma de
-                Chile
-            </p>
-        </article>
-    </section>
-    <script>document.getElementsByTagName("a").addEventListener("click", function(event) {
-        event.preventDefault(); // Evita el comportamiento predeterminado del enlace
-        
-        var ejemplo = document.getElementsByTagName("a");
-        ejemplo.scrollIntoView({ behavior: "smooth", block: "center" });
-      });</script>
+        <section id="estudios" class="port-art>
+            <h2>Estudios hasta la actualidad</h2>
+            <article>
+                <p>
+                    Mi educación básica fue en el colegio William Wilson Chol-Chol, estudié ahi desde pre-kinder hasta
+                    8vo,
+                    terminando esa etapa comencé a estudiar en el ahora llamado " Liceo Comercial Temuco Bicentenario
+            de Excelencia", mis estudios ahi fueron desde 2017 Hasta el 2022, teniendo que repetir un año por motivos de
+            la pandemia del 2022 pero finalizando con un título técnico en administración de empresas mención logística,
+            el verano del 2023 comencé mi practica técnico profesional en EASY S.A, actualmente me encuentro estudiando
+            Ingeniería Civil Informática en la Universidad Autónoma de Chile </p>
+            </article>
+        </section>
+    </main>
 </body>
 
 </html>
